@@ -7,7 +7,7 @@ jobs:
   create:
     runs-on: ubuntu-latest
     env:
-        working-directory: ./
+        working-directory: ./Modulo
         name: h.web1
         owner: himanshi.soni@cloudeq.com
         AWS_REGION: ap-south-1
@@ -34,3 +34,7 @@ jobs:
           terraform plan -var name="${{env.name}}" -var owner="${{env.owner}}"
           terraform apply -var name="${{env.name}}" -var owner="${{env.owner}}"  -auto-approve
       
+          [528519205020_AWSAdministratorAccess]
+          aws_access_key_id=ASIAXWDRTCCONY3BPL7W
+          aws_secret_access_key=vuOVts0fFdWskQE3ADzihDB95kB5rVdgHCvwu7yC
+          aws_session_token=IQoJb3JpZ2luX2VjEEUaCXVzLXdlc3QtMiJIMEYCIQCQoqhbFb8WQh6fodE/GA+A2cBUQOBfRaolPwQYd4lr/wIhAM0V/qL4OVqb5ak/CVLVCvbYVzDLt42In+hRf6STv7j6KpADCF4QARoMNTI4NTE5MjA1MDIwIgxEuWTV0dGHztoo1S8q7QIkacs5HEzIkIcg1UTK1Jjq5xY8mzO1SqsWsGqvKu0JzHdb0Tfs+Z19pPR1zxp+rg5Z2921LPLl8HpHy5AJnez2XyPHsUSigO5UgbbVTtj2kvzVpGuX9tEAAhR33J9WITUeI5NEVMwxya8jU1hjFAvhbbZiW2eJ53ycY2haCAyKDF6IOefAmKWfIekK0q3g9oWz0xTT/8a90CImeIFfrtudXSxD5nyaEAuLX7ovlik2QPlTeVByhcBcm3UYisr9a5+p/BJHEuyRbLyFoIUBjAab7wb51Sm+i46wFTS3oqFFHSNgqxWtbrQWpAsVaZrhAmGusvy4dd+VLUb33copeKTZq07zjGECowF86d69R7RNCNop2Z0Qa1EpDmos48GXzY4K0TuQNEinN+VeoWgUTFpBHgty2gmpbAbYlHyfTgZWFWMkRtEWayi22WEz28Hfl4xd/netw2VQOs4AcpXMl688qkj9+zTp4gubrclpsDCbxq+pBjqlAdSJbd9BZEU029U7QBOlg62DPU8NaPdWQ+sFafn36S9Q5IJDHop3pX4E6LZiHyepxlHEi38FsoZ3m8+LPNA1RXoekQaZUdAH6ZzcMU58to+UE+xj+QGFwi2gpECRF16fHRgRnTRkag0x6NnkDQhvtSDHs7qZFsKTXonDzAaCuAzASH1TeTiZeRrEQauGpwOlGfD4MUQxGKrY3wf0oIjDUkuJKRpahg==
