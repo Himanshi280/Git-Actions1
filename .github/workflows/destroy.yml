@@ -9,8 +9,8 @@ jobs:
     runs-on: ubuntu-latest
     env:
       working-directory: ./
-      name:  h.web1
-      owner: himanshi.soni@cloudeq.com
+      # name:  h.web1
+      # owner: himanshi.soni@cloudeq.com
       AWS_REGION: ap-south-1
 
     steps:
@@ -33,4 +33,6 @@ jobs:
         working-directory: ${{env.working-directory}}
         run: |
           terraform init
-          terraform destroy -var name="${{env.name}}" -var owner="${{env.owner}}"  -auto-approve
+          terraform destroy  -auto-approve
+
+          # terraform destroy -var name="${{env.name}}" -var owner="${{env.owner}}"  -auto-approve
