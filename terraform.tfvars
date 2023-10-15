@@ -1,5 +1,5 @@
 own    = ["Himanshi"]
-bucket = ["s1-testbucket", "s2-testbucket"]
+bucket = ["h1-testbucket", "h2-testbucket"]
 env    = ["Dev"]
 name   = ["himanshisoni"]
 
