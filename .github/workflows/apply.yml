@@ -8,8 +8,8 @@ jobs:
     runs-on: ubuntu-latest
     env:
         working-directory: ./
-        name: h.web1
-        owner: himanshi.soni@cloudeq.com
+        # name: h.web1
+        # owner: himanshi.soni@cloudeq.com
         AWS_REGION: ap-south-1
 
     steps:
@@ -31,8 +31,11 @@ jobs:
         working-directory: ${{env.working-directory}}
         run: |
           terraform init
-          terraform plan -var name="${{env.name}}" -var owner="${{env.owner}}"
-          terraform apply -var name="${{env.name}}" -var owner="${{env.owner}}"  -auto-approve
+          terraform plan
+          terraform apply -auto-approve
+          
+          # terraform plan -var name="${{env.name}}" -var owner="${{env.owner}}"
+          # terraform apply -var name="${{env.name}}" -var owner="${{env.owner}}"  -auto-approve
       
           # [528519205020_AWSAdministratorAccess]
           # aws_access_key_id=ASIAXWDRTCCONY3BPL7W
