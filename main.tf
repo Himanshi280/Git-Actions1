@@ -1,5 +1,5 @@
 module "ec2" {
-  source        = "../Res1"
+  source        = "./Res1"
   for_each      = var.loop_ins
   ami-id        = each.value.ami
   subnet-id     = each.value.subnet
@@ -8,7 +8,7 @@ module "ec2" {
   owner         = each.key
 }
 module "s3" {
-  source      = "../Res2"
+  source      = "./Res2"
   count       = 2
   bucket_name = var.bucket[count.index]
   tag_name    = var.name[0]
