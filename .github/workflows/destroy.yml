@@ -8,7 +8,7 @@ jobs:
     name: "Terraform-Destroy"
     runs-on: ubuntu-latest
     env:
-      working-directory: ./Modulo
+      working-directory: ./
       name:  h.web1
       owner: himanshi.soni@cloudeq.com
       AWS_REGION: ap-south-1
